@@ -13,11 +13,10 @@ else:
     if x==s :
         print("무승부")
     elif x!=s:
-        if str(x)=="가위" and str(s)=="보":
-            print("플레이어 승리")
-        if str(x)=="바위" and str(s)=="가위":
-            print("플레이어 승리")
-        if str(x)=="보" and str(s)=="바위":
+        if ((str(x)=="가위" and str(s)=="보") or
+            (str(x)=="바위" and str(s)=="가위") or
+            (str(x)=="보" and str(s)=="바위")):
             print("플레이어 승리")
         else:
             print("컴퓨터 승리")
+
